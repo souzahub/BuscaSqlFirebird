@@ -1,0 +1,59 @@
+# BuscaSqlFirebird
+
+## Descrição
+Este projeto é um utilitário para exportar dados de tabelas de um banco de dados Firebird para arquivos JSON e Excel.
+
+## Pré-requisitos
+- Node.js instalado
+- NPM (Node Package Manager) instalado
+
+## Instalação
+1. Clone o repositório:
+    ```sh
+    git clone <URL_DO_REPOSITORIO>
+    cd BuscaSqlFirebird
+    ```
+
+2. Instale as dependências:
+    ```sh
+    npm install
+    ```
+
+## Configuração
+1. Edite o arquivo `config.cfg` para configurar a conexão com o banco de dados Firebird:
+    ```ini
+    [database]
+    host = localhost
+    port = 3050
+    path = C:\\Users\\LUAN\\Documents\\Projeto Delphi Luan\\CapeMilk\\Casa\\lanchoneteVCLDashCapmilk11casa\\bin\\BD00.FDB
+    user = SYSDBA
+    password = masterkey
+    charset = NONE
+    ```
+
+## Uso
+1. Execute o script para iniciar o processo de exportação:
+    ```sh
+    node conexao.js
+    ```
+
+2. Siga as instruções no terminal:
+    - Digite a quantidade de tabelas para exportar.
+    - Digite o nome de cada tabela.
+
+## Gerar Executável
+1. Instale o `pkg` globalmente, se ainda não estiver instalado:
+    ```sh
+    npm install -g pkg
+    ```
+
+2. Execute o comando de build para gerar o executável:
+    ```sh
+    npm run build
+    ```
+
+3. O executável será gerado na pasta `dist`.
+
+## Observações
+- Certifique-se de que o caminho do banco de dados no arquivo `config.cfg` está correto e acessível.
+- O script exportará os dados das tabelas especificadas para arquivos JSON e Excel nas pastas `JSON` e `EXCEL`, respectivamente.

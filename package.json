@@ -1,0 +1,23 @@
+{
+  "name": "BuscaSqlFirebird",
+  "version": "1.0.0",
+  "main": "conexao.js",
+  "bin": "conexao.js",
+  "scripts": {
+    "build": "pkg . --out-dir dist"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "iconv-lite": "^0.6.3",
+    "ini": "^2.0.0",
+    "node-firebird": "^1.1.9"
+  },
+  "pkg": {
+    "assets": [
+      "path/to/your/assets/**/*"
+    ],
+    "targets": [
+      "node14-win-x64"
+    ]
+  }
+}
